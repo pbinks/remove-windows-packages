@@ -87,6 +87,9 @@ Get-AppxPackage Microsoft.BingFinance | Remove-AppxPackage
 echo "Remove Movies & TV:"
 Get-AppxPackage Microsoft.ZuneVideo | Remove-AppxPackage
 
+echo "Remove Netflix:"
+Get-AppxPackage "*.Netflix" | Remove-AppxPackage
+
 echo "Remove News:"
 Get-AppxPackage Microsoft.BingNews | Remove-AppxPackage
 
