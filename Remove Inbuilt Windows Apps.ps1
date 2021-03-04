@@ -1,4 +1,4 @@
-echo Remove all unnecessary Windows 10 packages
+echo "Remove all unnecessary Windows 10 packages"
 
 echo "Remove Adobe Photoshop Express:"
 Get-AppxPackage AdobeSystemsIncorporated.AdobePhotoshopExpress | Remove-AppxPackage
@@ -29,6 +29,9 @@ Get-AppxPackage king.com.CandyCrushSaga | Remove-AppxPackage
 
 echo "Remove Candy Crush Soda Saga:"
 Get-AppxPackage king.com.CandyCrushSodaSaga | Remove-AppxPackage
+
+echo "Remove Cortana"
+Get-AppxPackage Microsoft.549981C3F5F10 | Remove-AppxPackage
 
 echo "Remove Dolby Access:"
 Get-AppxPackage DolbyLaboratories.DolbyAccess | Remove-AppxPackage
